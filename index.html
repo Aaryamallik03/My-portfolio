@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aarya Mallik | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img src="profile.jpg" alt="Aarya Mallik" class="profile-pic">
+        <h1>Aarya Mallik</h1>
+        <p>Aspiring Computer Science Engineer | 2nd Year @ NIT Meghalaya</p>
+        <button onclick="toggleDarkMode()" class="toggle-btn">🌓 Toggle Dark Mode</button>
+    </header>
+
+    <!-- About Me Section -->
+    <section id="about" class="fade-in">
+        <h2>About Me</h2>
+        <p>I’m a passionate computer science student focused on building foundational knowledge and real-world projects. I enjoy problem-solving, and I’m currently exploring web development and programming in C & C++.</p>
+    </section>
+
+    <!-- Collapsible Sections -->
+    <section id="projects" class="collapsible">
+        <h2 onclick="toggleSection('projects')">Projects</h2>
+        <div class="content">
+            <ul>
+                <li><strong>Number Guessing Game</strong> (C++) – A fun CLI-based game where the player guesses a number. [✔️ Done]</li>
+                <li><strong>To-Do List App</strong> – A web-based app to add and manage daily tasks. [🔜 Coming Soon]</li>
+                <li><strong>Portfolio Website</strong> – This resume website built with HTML and CSS. [🚀 In Progress]</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="skills" class="collapsible">
+        <h2 onclick="toggleSection('skills')">Skills</h2>
+        <div class="content">
+            <div class="skill">
+                <label>HTML</label>
+                <div class="progress-bar">
+                    <div class="progress html"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <label>CSS</label>
+                <div class="progress-bar">
+                    <div class="progress css"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <label>C</label>
+                <div class="progress-bar">
+                    <div class="progress c"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <label>C++</label>
+                <div class="progress-bar">
+                    <div class="progress cpp"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="collapsible">
+        <h2 onclick="toggleSection('contact')">Contact</h2>
+        <div class="content">
+            <p>📞 +91 77618 77668</p>
+            <p>📧 <a href="mailto:aaryamallik27@mail.com">aaryamallik27@mail.com</a></p>
+            <p>🌐 <a href="https://github.com/yourusername" target="_blank">GitHub</a> | 
+               <a href="https://linkedin.com/in/yourusername" target="_blank">LinkedIn</a></p>
+            <br>
+            <a class="resume-button" href="resume.pdf" download>📄 Download Resume</a>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

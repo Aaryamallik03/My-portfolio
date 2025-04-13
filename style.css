@@ -1,0 +1,161 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f0f2f5;
+    color: #333;
+    line-height: 1.6;
+    transition: background-color 0.3s ease;
+}
+
+header {
+    background: #2c3e50;
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.2rem;
+    color: #bdc3c7;
+}
+
+button.toggle-btn {
+    margin-top: 15px;
+    padding: 8px 16px;
+    border: none;
+    background-color: #fff;
+    color: #2c3e50;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+button.toggle-btn:hover {
+    background-color: #ddd;
+}
+
+.profile-pic {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
+section {
+    max-width: 800px;
+    margin: 40px auto;
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+/* Collapsible Section */
+.collapsible h2 {
+    cursor: pointer;
+    font-size: 1.5rem;
+    background-color: #3498db;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    text-align: center;
+    transition: background-color 0.3s;
+}
+
+.collapsible h2:hover {
+    background-color: #2980b9;
+}
+
+.collapsible .content {
+    display: none;
+    padding-top: 10px;
+    transition: max-height 0.5s ease-in-out;
+}
+
+/* Fade In Animation */
+.fade-in {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 1s ease, transform 1s ease;
+}
+
+body.loaded .fade-in {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Skill Bar Styling */
+.progress-bar {
+    width: 100%;
+    height: 20px;
+    background-color: #e0e0e0;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.progress {
+    height: 100%;
+    border-radius: 10px;
+    width: 0;
+    transition: width 2s ease-in-out;
+}
+
+.html { background-color: #ff5733; }
+.css { background-color: #3498db; }
+.c { background-color: #2ecc71; }
+.cpp { background-color: #9b59b6; }
+
+body.loaded .html {
+    width: 85%;
+}
+
+body.loaded .css {
+    width: 80%;
+}
+
+body.loaded .c {
+    width: 75%;
+}
+
+body.loaded .cpp {
+    width: 70%;
+}
+
+/* Dark Mode */
+body.dark-mode {
+    background-color: #121212;
+    color: #f5f5f5;
+}
+
+body.dark-mode section {
+    background-color: #1f1f1f;
+}
+
+body.dark-mode a {
+    color: #66d9ef;
+}
+
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    section {
+        margin: 20px;
+        padding: 20px;
+    }
+}
